@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Index</title>
+</head>
+<body>
+  <div  class="container-fluid bg-black d-flex justify-content-evenly py-2 ">
+    <a href="#" class="text-light nav-link fw-light link-success">Registro</a>
+    <a href="#" class="text-light nav-link fw-light link-success">Iniciar seccion</a>
+    <a href="#" class="text-light nav-link fw-light link-success"><object data="svg/carrito.svg"></object> Carrito</a>
+  </div>
+  
+  <header>
+    <nav class="navbar">
+    <header class="nabvar-mobile">
+      <a class="close" href="#" onclick="cerrar()" id="x"><img src="svg/close.svg" ></a>
+      <a class="navbar-mobile-link" href="#" onclick="Abrir()" id="open"><img src="svg/Menu.svg" ></a>
+      <a class="navbar-mobile-link" href="#"><img src="svg/newuser.svg"></a>
+      <a class="navbar-mobile-link" href="#"><img src="svg/login.svg"></a>
+      <a class="navbar-mobile-link" href="#"><img src="svg/carritomobile.svg"></a>
+    </header>
+    <nav class="nav-menu" id="Main_mobile">
+      <form class="form-group" action="#">
+        <div class="form-group-container">
+          <span class="form-group-icon"><object data="svg/search.svg" ></object></span>
+          <input type="text" class="form-group-input" placeholder="Buscar...">
+        </div>
+      </form>
+    
+      <ul class="nav-menu-ul">
+
+        <li class="nav-menu-item" id="men">
+            <a class="nav-menu-link active" href="#">Hombre<object data="svg/arrowdown.svg"></object></a>
+            <div class="container-sub-menu" id="submenu_men">
+                <ul class="sub-menu-ul">
+                    <li class="nav-menu-item ">
+                        <a class="nav-menu-link" href="#"><strong>Casual</strong><object data="svg/arrowdown.svg"></object></i></a>
+                        <ul class="sub-menu-ul">
+                            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Abrigos</a></li>
+                            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Deportivo</a></li>
+                            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Pantalones</a></li>
+                            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Remeras</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sub-menu-ul">
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="#"><strong>Formal</strong><object data="svg/arrowdown.svg"></object></a>
+                        <ul class="sub-menu-ul">
+                            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Chaquetas</a></li>
+                            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Camisetas</a></li>
+                            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Trajes</a></li>
+                            <li class="nav-menu-item"><a class="nav-menu-link" href="#">Pantalones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="ads">
+                    <h1 class="ads-h1">Ofertas de Invierno</h1>
+                    <h5 class="ads-h2">Desde el 50% de descuento</h5>
+                </div>
+            </div>
+        </li>
+
+
+        <li class="nav-menu-item" id="women">
+            <a href="#" class="nav-menu-link ">Mujer <object data="svg/arrowdown.svg"></object> </a>
+            <div class="container-sub-menu " id="submenu_women"> 
+              <ul class="sub-menu-ul">
+                <li class="nav-menu-item ">
+                  <a class="nav-menu-link" href="#"><strong>Casual</strong><object data="svg/arrowdown.svg"></object></a>
+                  <ul class="sub-menu-ul">
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="#">Remeras</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="#">Bikinis</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="#">Juvenil</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link" href="#">Deportivo</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="sub-menu-ul">
+                  <li class="nav-menu-item"><a class="nav-menu-link" href="#"><strong>Formal/Noche</strong><object data="svg/arrowdown.svg"></object></i></a>
+                    <ul class="sub-menu-ul">
+                      <li class="nav-menu-item"><a class="nav-menu-link" href="#">Vestidos</a></li>
+                      <li class="nav-menu-item"><a class="nav-menu-link" href="#">Accesorios</a></li>
+                      <li class="nav-menu-item"><a class="nav-menu-link" href="#">Trajes</a></li>
+                      <li class="nav-menu-item"><a class="nav-menu-link" href="#">Nueva Temporada</a></li>
+                    </ul>
+                  </li>
+              </ul>
+              <div class="ads is-hidden-touch">
+                <h1 class="ads-h1">Ofertas de Otoño</h1>
+                <h5 class="ads-h2">Desde el 50% de descuento</h5>
+              </div>
+            </div> 
+        </li>
+        <li class="nav-menu-item"><a href="#" class="nav-menu-link">Nosotros</a></li>
+        <li class="nav-menu-item"><a href="#" class="nav-menu-link">Novedades</a></li>
+        <li class="nav-menu-item"><a href="contacto.html" class="nav-menu-link">Contacto</a></li>
+      </ul>
+
+    </nav>
+  </nav>
+  </header>
+  <div class="contimg">
+    <img class="imghead" src="imagenes/B.jpg">
+    </div>
+    
+  <div id="fecha_año" class="date"></div>
+  
+
+  <div class="px-5 pb-4">
+    <div class="division"></div>
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid d-flex justify-content-start nav_hover_section">
+        <a class="navbar-brand fs-6 active" href="#">POPULAR</a>
+        <a class="navbar-brand fs-6" href="#">NOVEDADES</a>
+        <a class="navbar-brand fs-6" href="#">MAS VENDIDOS</a>
+        <a class="navbar-brand fs-6" href="#">OFERTAS</a>
+        <a class="navbar-brand fs-6" href="#">MUY PRONTO</a>
+      </div>
+    </nav>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="row">
+                  <div class="col-sm-6 col-md-6">
+                      <div class="card img-medium">
+                          <span class="price">$30.000</span>
+                          <img class="img-fluid " src="imagenes/item-1.png" alt="img-producto">
+                          <div class="card-info">
+                              <h4 class="text-center fs-6">Blazer de Mujer $30.000</h4>
+                              <div class="card-buttons">
+                                  <a href="#" class="btn btn-redondo"><img src="svg/carrito-card.svg"></a>
+                                  <a href="#" class="btn btn-redondo"><img src="svg/corazon.svg"></a>
+                                  <a href="producto.html" class="btn btn-redondo"><img src="svg/ojos.svg"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                      <div class="card img-medium">
+                          <span class="price">$17.500</span>
+                          <img class="img-fluid" src="imagenes/item-2.png" alt="img-producto">
+                          <div class="card-info">
+                              <h4 class="text-center fs-6">Jean Mujer $17.500</h4>
+                              <div class="card-buttons">
+                                  <a href="#" class="btn btn-redondo"><img src="svg/carrito-card.svg"></a>
+                                  <a href="#" class="btn btn-redondo"><img src="svg/corazon.svg"></a>
+                                  <a href="producto.html" class="btn btn-redondo"><img src="svg/ojos.svg"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-12">
+                      <div class="card">
+                          <span class="price">$6.900</span>
+                              <img class="img-fluid" src="imagenes/item-3.png" alt="img-producto">
+                          <div class="card-info">
+                              <h4 class="text-center fs-6">Remera Hombre $6.900</h4>
+                              <div class="card-buttons">
+                                  <a href="#" class="btn btn-redondo"><img src="svg/carrito-card.svg"></a>
+                                  <a href="#" class="btn btn-redondo"><img src="svg/corazon.svg"></a>
+                                  <a href="producto.html" class="btn btn-redondo"><img src="svg/ojos.svg"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                      <div class="card">
+                          <span class="price"><del>$50.700</del> $42.900</span>
+                              <img class="img-fluid" src="imagenes/item-4.png" alt="img-producto">
+                          <div class="card-info">
+                              <h4 class="text-center fs-6">Campera Hombre $42.900</h4>
+                              <div class="card-buttons">
+                                  <a href="#" class="btn btn-redondo"><img src="svg/carrito-card.svg"></a>
+                                  <a href="#" class="btn btn-redondo"><img src="svg/corazon.svg"></a>
+                                  <a href="producto.html" class="btn btn-redondo"><img src="svg/ojos.svg"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                      <div class="card img-medium">
+                          <span class="price">$12.000</span>
+                          <img class="img-fluid" src="imagenes/item-5.png" alt="img-producto">
+                          <div class="card-info">
+                              <h4 class="text-center fs-6">Jean Ancho Mujer $12.000</h4>
+                             <div class="card-buttons">
+                                  <a href="#" class="btn btn-redondo"><img src="svg/carrito-card.svg"></a>
+                                  <a href="#" class="btn btn-redondo"><img src="svg/corazon.svg"></a>
+                                  <a href="producto.html" class="btn btn-redondo"><img src="svg/ojos.svg"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                      <div class="card img-medium">
+                          <span class="price">$13.000</span>
+                          <img class="img-fluid" src="imagenes/item-6.png" alt="img-producto">
+                          <div class="card-info">
+                              <h4 class="text-center fs-6">Blusa mujer $13.000</h4>
+                             <div class="card-buttons">
+                                  <a href="#" class="btn btn-redondo"><img src="svg/carrito-card.svg"></a>
+                                  <a href="#" class="btn btn-redondo"><img src="svg/corazon.svg"></a>
+                                  <a href="producto.html" class="btn btn-redondo"><img src="svg/ojos.svg"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+
+  <div class="bg-body-secondary px-5 pb-4">
+    <div class="row justify-content-center pt-5">
+      <div class="col-12 col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+        <h5>Información</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Nosotros</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Sucursales</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Marcas</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Mapa del sitio</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+        <h5>Por qué comprar</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Envíos internacionales</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Compras seguras</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Testimonios</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Mayoristas</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+        <h5>Tu cuenta</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Tus descuentos</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Seguimientos</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Favoritos</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Historial</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+        <h5>Noticias</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Nuevas Sucursales</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Ofertas y Descuentos</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Día de la madre</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Temporada 2022/2023</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-6 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+        <h5>Servicios</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Asesoramiento Online</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Bolsa de Trabajo</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Catálogo Online</a>
+          </li>
+          <li class="mb-2">
+            <a class="nav-link text-black link-success" href="#">Guardería</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      
+      <div class="row py-4 mb-5" id="bg-footer">
+        <div class="col-3" >
+          <a class="d-flex justify-content-center" href="#"><object data="svg/facebook.svg"></object></a>
+        </div>
+        <div class="col-3">
+          <a class="d-flex justify-content-center" href="#"><object data="svg/twitter.svg"></object></a>
+        </div>
+        <div class="col-3">
+          <a class="d-flex justify-content-center" href="#"><object data="svg/instagram.svg"></object></a>
+        </div>
+        <div class="col-3">
+          <a class="d-flex justify-content-center" href="#"><object data="svg/pinteres.svg"></object></a>
+        </div>
+      </div>
+    
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="javas.js"></script>
+</body>
+</html>
