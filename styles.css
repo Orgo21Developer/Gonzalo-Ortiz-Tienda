@@ -52,7 +52,6 @@ li {
     bottom: 0;
     z-index: 100;
     border: var(--border-dark-light);
-    /*background: #ffffff;*/
     transition: 0.5s;
     transform: translateX(-100%);
     background-color: white;
@@ -70,6 +69,7 @@ li {
     display: flex;
     justify-content: space-between;
 }
+
 .nav-menu-link:hover{
     color: var(--primary);
 }
@@ -119,7 +119,8 @@ li {
 }
 
 
-.container-sub-menu {                                            
+.container-sub-menu {   
+    overflow: hidden;                                         
     height: 0;
     transition: max-height 0.3s ease;
 }

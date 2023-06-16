@@ -78,6 +78,7 @@ function Fecha() {
 }
   
 // mostrar la hora actual-----------------------------------------------------------------------------------------------
+
 function mostrarHora() {
     let fecha = new Date();
     let hora = fecha.getHours();
@@ -113,16 +114,3 @@ if (document.getElementById("fecha_año")) {
 if (document.getElementById("reloj")) {
     mostrarHora();
 }
-  
-  
-
-
-
-
-
-
-  
-
-  
-
-  
